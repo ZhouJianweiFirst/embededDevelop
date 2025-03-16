@@ -1,0 +1,8 @@
+1.9.6 分明其和PWM定时器编程实战
+GPD0	0xE020A0	//引脚设为TOUT2 rGPD0 &= ~(0xf << 8);rGPD0 |= (0x10 << 8);
+TCFG0	0xE2500000	//预分频器
+TCFG1	0xE2500004	//分频器
+CON		0xE2500008	//rCON |= 0x1 << 12; rCON |= 0x1 << 13; rCON |= 0x1 << 14; rCON |= 0x1 << 15; 
+TCNTB2	0xE2500024
+TCMPB2	0xE2500028
+TCNTO2	0xE250002C
